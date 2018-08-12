@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rakkas|Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/>
+</head>
+<body>
+    <div class="content-area">
+        <header>
+            <h1>Hangman Game</h1>
+            <h2> كلمات إنجليزية مشتقة من اللغة  العربية</h2>
+        </header>
+        <hr>
+        <section id="game-box">
+            <h2>Guess the Letters!</h4>
+            <h3>Category: English Words Derived from Arabic</h3>
+            <p>
+                Ever hopped on the computer and been dying to play hangman? Well, die no more. Try and discover the hidden word by guessing its letters. Guess one letter at a time by pressing that letter on your keyboard. New words will automatically generate after each game ends.  <br><hr><br>
+                <h1 id="letters-box">Press Any Key to Begin!</h1>
+            </p>
+            <div id="input-box">
+                <h4>Wrong Letters:</h4>
+                <h3 id="key-input"></h3>    
+            </div>
+        </section>
+        <aside id="guesses-box">
+            <h4>Wrong Guesses Remaining:</h4>
+            <h3 id="guesses-left"></h3>
+        </aside>
+        <aside id="wins-losses">
+            <h4>Wins: </h4>
+            <h3 id="win-count"></h3>
+            <h4>Losses:</h4>
+            <h3 id="loss-count"></h3>
+        </aside>
+        <section>
+            <div>
+                <h4>Words Played:</h4>
+                <h3 id="words-played"></h3>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,22 @@
+body {
+    background-image: url("../images/oriental.png");
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    font-family: 'Rakkas', cursive;
+}
+
+.content-area {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #73c38c;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: white;
+}
+
