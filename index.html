@@ -12,40 +12,56 @@
 <body>
     <div class="content-area">
         <header>
-            <h1>Hangman Game</h1>
+            <h1>Hangman</h1>
             <h2> كلمات إنجليزية مشتقة من اللغة  العربية</h2>
         </header>
         <hr>
         <section id="game-box">
-            <h2>Guess the Letters!</h4>
             <h3>Category: English Words Derived from Arabic</h3>
-            <p>
-                Ever hopped on the computer and been dying to play hangman? Well, die no more. Try and discover the hidden word by guessing its letters. Guess one letter at a time by pressing that letter on your keyboard. New words will automatically generate after each game ends.  <br><hr><br>
-                <h1 id="letters-box">Press Any Key to Begin!</h1>
-            </p>
+            <h2>Type Any Letter to Begin!</h2>
+            <hr>
+            <h1 id="letters-box"></h1>
+            <aside id="hangman-box">
+                <svg id="hangman" viewBox="0 0 200 250">
+                    <!-- Gallows -->
+                    <line x1="10" y1="230" x2="100" y2="230" class="hangman-part base"/>
+                    <line x1="55" y1="230" x2="55" y2="50" class="hangman-part pole"/>
+                    <line x1="55" y1="50" x2="130" y2="50" class="hangman-part top"/>
+                    <line x1="130" y1="50" x2="130" y2="70" class="hangman-part rope"/>
+            
+                    <!-- Hangman parts (hidden initially) -->
+                    <circle cx="130" cy="90" r="20" class="hangman-part head"/>
+                    <line x1="130" y1="110" x2="130" y2="160" class="hangman-part body"/>
+                    <line x1="130" y1="120" x2="110" y2="140" class="hangman-part left-arm"/>
+                    <line x1="130" y1="120" x2="150" y2="140" class="hangman-part right-arm"/>
+                    <line x1="130" y1="160" x2="110" y2="200" class="hangman-part left-leg"/>
+                    <line x1="130" y1="160" x2="150" y2="200" class="hangman-part right-leg"/>
+                </svg>
+            </aside>
             <div id="input-box">
                 <h4>Wrong Letters:</h4>
                 <h3 id="key-input"></h3>    
             </div>
         </section>
-        <aside id="guesses-box">
-            <h4>Wrong Guesses Remaining:</h4>
-            <h3 id="guesses-left"></h3>
-        </aside>
-        <aside id="wins-losses">
-            <h4>Wins: </h4>
-            <h3 id="win-count"></h3>
-            <h4>Losses:</h4>
-            <h3 id="loss-count"></h3>
-        </aside>
-        <section>
-            <div>
-                <h4>Words Played:</h4>
-                <h3 id="words-played"></h3>
+        <section id="scoreboard">
+            <div class="score-card win-card">
+                <h4>Wins</h4>
+                <h3 id="win-count">0</h3>
+            </div>
+            <div class="score-card loss-card">
+                <h4>Losses</h4>
+                <h3 id="loss-count">0</h3>
+            </div>
+            <div class="score-card guess-card">
+                <h4>Guesses Left</h4>
+                <h3 id="guesses-left">6</h3>
+            </div>
+            <div class="score-card words-card">
+                <h4>Words Played</h4>
+                <h3 id="words-played">None</h3>
             </div>
         </section>
     </div>
     <script src="./assets/javascript/game.js"></script>
-
 </body>
 </html> 

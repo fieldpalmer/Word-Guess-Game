@@ -19,3 +19,72 @@ header {
    margin-top: 50px;
    background-color: white;
 }
+
+#hangman-box {
+   width: 200px;
+   height: 250px;
+   margin: auto;
+}
+
+#hangman {
+   width: 100%;
+   height: 100%;
+   stroke: black;
+   stroke-width: 4px;
+   fill: none;
+}
+
+.hangman-part {
+   display: none;
+   opacity: 0;
+   transition: opacity 0.5s ease-in-out;
+}
+
+.hangman-part.show {
+   display: block;
+   opacity: 1;
+}
+
+/* Scoreboard Section */
+#scoreboard {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   background: #f8f9fa;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   margin: 20px auto;
+   width: 80%;
+}
+
+.score-card {
+   width: 200px;
+   padding: 15px;
+   text-align: center;
+   border-radius: 8px;
+   font-weight: bold;
+   font-size: 1.2rem;
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s ease-in-out;
+   background-color: white;
+}
+
+.score-card:hover {
+   transform: scale(1.05);
+}
+
+.win-card {
+   border: 2px solid #28a745;
+   color: #28a745;
+}
+
+.loss-card {
+   border: 2px solid #dc3545;
+   color: #dc3545;
+}
+
+.guess-card {
+   border: 2px solid #007bff;
+   color: #007bff;
+}
